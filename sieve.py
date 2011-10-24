@@ -1,6 +1,6 @@
 ## The following is implemented for artistic purposes only. Although it performs fairly fast for
 ## inputs <= 10**6 (under 6 seconds on my machine)
-## Author : Vedat Levi Alev, alev@in.tum.de
+## Author : Vedat Levi Alev
 
 def sieve_of_eratosthenes(limit):
     """Returns all the primes in the intervall [2:limit)"""
