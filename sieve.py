@@ -1,5 +1,8 @@
 ## The following is implemented for artistic purposes only. Although it performs fairly fast for
-## inputs <= 10**6 (under 6 seconds on my machine)
+## inputs <= 10**5 (under 1 second), starting from iput>= 10**6 things start to get scary (more than
+## 10 seconds)
+##
+##
 ## Author : Vedat Levi Alev
 
 def sieve_of_eratosthenes(limit):
@@ -13,6 +16,4 @@ def sieve_of_eratosthenes(limit):
         primes.append(p)
         sieve = filter(lambda y: y % p, sieve)
     return primes + sieve #the remaining elements in the sieve cannot be composite numbers, see above
-    
-
 
